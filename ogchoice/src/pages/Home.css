@@ -1,0 +1,11 @@
+.HomePage{
+    height: 500px;
+    width: 100%;
+}
+.Image{
+    background-image: url(../../public/assets/images/products.png);
+    width: 800px;
+    height: 100%;
+    margin-left: 15%;
+    
+}

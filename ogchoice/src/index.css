@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-left,
+  .header-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .page {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
