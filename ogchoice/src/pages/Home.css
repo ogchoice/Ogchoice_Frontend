@@ -1,11 +1,37 @@
-.HomePage{
-    height: 1000px;
-    width: 100%;
-}
-.Image{
-    background-image: url(../../public/assets/images/OgchoiceBeetrootBlack.png);
-    width: 100%;
-    height: 100%;
-    margin-left: 8%;
-    
-}
+/* Default Styles (for all screens) */
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .Image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Styles for Laptop Screens */
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .HomePage {
+      padding: 40px; /* Increase padding for larger screens */
+    }
+  
+    .Image img {
+      width: 70%; /* Adjust image width for laptop screens */
+      margin-left: 14%;
+    }
+  }
+  
+  /* Styles for Mobile Screens */
+  @media (max-width: 768px) {
+    .HomePage {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .Image img {
+      width: 100%; /* Full width for mobile screens */
+    }
+  }
